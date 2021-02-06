@@ -1,0 +1,7 @@
+<p>login works!</p>
+<form [formGroup]="userGroup" (ngSubmit)="check()">
+    <input type="text"  formControlName="username" >
+    <input type="text"  formControlName="password" >
+    <button type="submit">Log in</button>
+    <p routerLink="../register">Register</p>
+</form>

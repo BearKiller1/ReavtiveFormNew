@@ -1,0 +1,19 @@
+<p>dashboard works!</p>
+
+<div class="chatName">
+    <h1>{{from}}</h1>
+</div>
+
+<div class="content">
+
+
+    <div class="output" *ngFor="let item of messages" [ngClass]="item.from">
+        {{item.msg}}
+    </div>
+
+</div>
+
+<form [formGroup]="sendGroup" (ngSubmit)="send()">
+    <input type="text"  formControlName="Msg" >
+    <button type="submit" >Send</button>
+</form>

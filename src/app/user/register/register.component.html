@@ -1,0 +1,7 @@
+<p>register works!</p>
+<form [formGroup]="registerGroup" (ngSubmit)="signup()">
+    <input type="text"  formControlName="username" >
+    <input type="text"  formControlName="password" >
+    <input type="text"  formControlName="repeat" >
+    <button type="submit">Log in</button>
+</form>

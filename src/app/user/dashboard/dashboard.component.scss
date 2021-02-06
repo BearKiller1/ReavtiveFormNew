@@ -1,0 +1,29 @@
+@import '~src/assets/scss/library.scss';
+
+.content{
+    width:70%;
+    height: 70vh;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-left:15%;
+    overflow: scroll;       
+    overflow-x: hidden;
+    .output{
+    }
+}
+.chatName{
+    @include flex();
+}
+
+form{
+    @include flex();
+    justify-content: center;
+}
+.gio{
+    color: red;
+    text-align: left;
+}
+.dachi{
+    text-align: right;
+    color: green;
+}
